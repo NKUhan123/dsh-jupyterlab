@@ -1,0 +1,63 @@
+{
+  "name": "dsh-jupyterlab",
+  "version": "0.1.0",
+  "description": "JupyterLab-style notebook for DeepSeek Harness: split code/output view, Jupyter keyboard shortcuts, Markdown cells and one-click cell delete. Modified fork of @beihaizb/dsh-notebook.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NKUHan123/dsh-jupyterlab.git"
+  },
+  "homepage": "https://github.com/NKUHan123/dsh-jupyterlab",
+  "bugs": {
+    "url": "https://github.com/NKUHan123/dsh-jupyterlab/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "jupyter",
+    "jupyterlab",
+    "notebook",
+    "ipynb",
+    "ipykernel",
+    "agent",
+    "data-analysis",
+    "split-view"
+  ],
+  "files": [
+    "lib",
+    "python",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-rc.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
