@@ -1,6 +1,6 @@
 {
   "name": "dsh-jupyterlab",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "JupyterLab-style notebook for DeepSeek Harness: three-pane layout (file bar, cells, figure viewer), split code/output view, Jupyter keyboard shortcuts and Markdown cells. Modified fork of @beihaizb/dsh-notebook.",
   "license": "MIT",
   "type": "module",
