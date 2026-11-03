@@ -14,6 +14,8 @@
 3. **Jupyter keyboard shortcuts.** Press `Esc` to leave editing (command mode), then `a` / `b` insert a cell above / below, `dd` deletes, `Enter` edits, `↑` `↓` (or `k` `j`) move, `m` / `y` switch the cell to Markdown / Code, and `Ctrl+Enter` / `Shift+Enter` / `Alt+Enter` run. While editing, `Tab` accepts the completion popup (and still indents when none is open). `?` opens the shortcut list.
 4. **Cell type and one-click delete.** A `✂` scissors in the gutter deletes the cell, and a `py` / `md` chip shows and switches the cell type. Markdown cells render `##` headings, are edited by double-click, and can be folded like code cells.
 5. **`+ MD` in the toolbar** inserts a Markdown cell (the existing `+ Cell` now selects and focuses what it inserts).
+6. **Left file bar (JupyterLab-style).** The saved `.ipynb` files in the working directory are listed down the left side; click one to open it. The toolbar `🗂 Files` button shows/hides the bar.
+7. **Right figure viewer.** Click any output figure — or any image path printed in the output, such as `Saved: ...\fig.tif` — and it opens in a resizable panel on the right (fit / actual size / fullscreen / close) instead of a modal that covers the notebook. `.tif` / `.tiff` frames are converted to PNG with the kernel's Pillow and cached, so saved TIFFs preview too.
 
 Everything else — persistent kernel, agent tools, `.ipynb` round-trip, kernel picker, tqdm progress bars, clickable tracebacks, long-output folding, hybrid-CPU hint, EN/中文 UI — is upstream and unchanged.
 
